@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <style>
+    .quotes::before{
+      position: absolute;
+          content: url(./images/bg-pattern-quotation.svg);
+          top: 0;
+          right: 55px;
+          z-index: 2;
+    }
+  </style>
+
+</head>
+<body class="text-13 font-sans bg-lght-Gray relative flex flex-col justify-center items-center min-h-screen">
+  <div class="grid grid-cols-0 grid-rows-5 gap-6 py-16 px-6 md:grid-cols-2 md:grid-rows-3 md:px-12 lg:grid-cols-4 lg:grid-rows-2 lg:max-w-7xl">
+    <div class="flex flex-col py-6 px-8 rounded-lg shadow-bx-shadow relative bg-mod-Violet text-white quotes transform transition duration-0.4 hover:scale-105 md:row-start-1 md:row-span-2 lg:row-auto lg:col-span-2">
+      <div class="testimonial_author">
+        <img src="./images/image-daniel.jpg" alt="Daniel Clifford" class="rounded-full w-9 h-9 float-left border-white border mr-5">
+        <div class="flex flex-col z-10">
+          <p class="z-10">Daniel Clifford</p>
+          <p class="text-xs opacity-50 z-10">Verified Graduate</p>
+        </div>
+      </div>
+      <h3 class="text-2xl font-medium leading-6 my-5 mx-0 z-10">
+        I received a job offer mid-course, and the subjects I learned were current, if not more so,
+        in the company I joined. I honestly feel I got every penny’s worth.
+      </h3>
+      <p class="leading-5 opacity-70">
+        “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a
+        transition and have heard some people who had an amazing experience here. I signed up
+        for the free intro course and found it incredibly fun! I enrolled shortly thereafter.
+        The next 12 weeks was the best - and most grueling - time of my life. Since completing
+        the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
+      </p>
+    </div>
+    <div class="flex flex-col py-6 px-8 rounded-lg shadow-lg bg-vdark-gry-Blue text-white transform transition duration-0.4 hover:scale-105">
+      <div class="testimonial_author">
+        <img src="./images/image-jonathan.jpg" alt="Jonathan Walters" class="rounded-full w-9 h-9 float-left border-white border mr-5">
+        <div class="flex flex-col">
+          <div class="testimonial_author_name">Jonathan Walters</div>
+          <div class="text-xs opacity-50">Verified Graduate</div>
+        </div>
+      </div>
+      <h3 class="text-2xl font-medium leading-6 my-5 mx-0">The team was very supportive and kept me motivated</h3>
+      <p class="leading-5 opacity-70">
+        “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer
+        for a big company. This was one of the best investments I’ve made in myself. ”
+      </p>
+    </div>
+    <div class="flex flex-col py-6 px-8 rounded-lg shadow-lg bg-white text-vdark-gry-Blue transform transition duration-0.4 hover:scale-105">
+      <div class="testimonial_author">
+        <img src="./images/image-jeanette.jpg" alt="Jeanette Harmon" class="rounded-full w-9 h-9 float-left border-white border mr-5">
+        <div class="flex flex-col">
+          <div class="testimonial_author_name">Jeanette Harmon</div>
+          <div class="text-xs opacity-50">Verified Graduate</div>
+        </div>
+      </div>
+      <h3 class="text-2xl font-medium leading-6 my-5 mx-0">An overall wonderful and rewarding experience</h3>
+      <p class="leading-5 opacity-70">
+        “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living
+        while doing something I love. ”
+      </p>
+    </div>
+    <div class="flex flex-col py-6 px-8 rounded-lg shadow-lg bg-vdark-blk-Blue text-white transform transition duration-0.4 hover:scale-105 lg:col-span-2">
+      <div class="testimonial_author">
+        <img src="./images/image-patrick.jpg" alt="Patrick Abrams" class="rounded-full w-9 h-9 float-left border-white border mr-5">
+        <div class="testimonial_author_info">
+          <div class="testimonial_author_name">Patrick Abrams</div>
+          <div class="text-xs opacity-50">Verified Graduate</div>
+        </div>
+      </div>
+      <h3 class="text-2xl font-medium leading-6 my-5 mx-0">
+        Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and
+        learning from their experiences was easy.
+      </h3>
+      <p class="leading-5 opacity-70">
+        “ The staff seem genuinely concerned about my progress which I find really refreshing. The program
+        gave me the confidence necessary to be able to go out in the world and present myself as a capable
+        junior developer. The standard is above the rest. You will get the personal attention you need from
+        an incredible community of smart and amazing people. ”
+      </p>
+    </div>
+    <div class="flex flex-col py-6 px-8 rounded-lg shadow-lg bg-white text-vdark-gry-Blue transform transition duration-0.4 hover:scale-105 lg:col-start-4 lg:col-end-5 lg:row-start-1 lg:row-span-2">
+      <div class="testimonial_author">
+        <img src="./images/image-kira.jpg" alt="Kira Whittle" class="rounded-full w-9 h-9 float-left border-white border mr-5">
+        <div class="testimonial_author_info">
+          <div class="testimonial_author_name">Kira Whittle</div>
+          <div class="text-xs opacity-50">Verified Graduate</div>
+        </div>
+      </div>
+      <h3 class="text-2xl font-medium leading-6 my-5 mx-0">Such a life-changing experience. Highly recommended!</h3>
+      <p class="leading-5 opacity-70">
+        “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from
+        professionals who can help me learn programming step by step. I was encouraged to enroll by a former
+        student of theirs who can only say wonderful things about the program. The entire curriculum and staff
+        did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team
+        project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial
+        could ever have. In fact, I’ve often referred to it during interviews as an example of my development
+        experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers.
+        100% recommend! ”
+      </p>
+    </div>
+    </div>
+
+    <footer class="absolute flex justify-center left-2/4 bottom-4 transform -translate-x-1/2 translate-y-16 md:translate-y-5">
+      <div class="text-xl text-center">
+        Challenge by <a class="text-links"  href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a class="text-links" href="https://www.frontendmentor.io/profile/Sk7867">Siddhesh Kamble</a>.
+      </div>
+    </footer>
+</body>
+</html>
